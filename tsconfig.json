@@ -1,0 +1,13 @@
+{
+  "sourceMap": true,
+  "inlineSources": true,
+  "compileOnSave": false,
+  "compilerOptions": {
+    "module": "es6",
+    "target": "es5",
+    "charset": "utf-8",
+    "removeComments": false,
+    "sourceMap": true
+  },
+  "exclude": ["node_modules"]
+}

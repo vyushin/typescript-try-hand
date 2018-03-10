@@ -1,0 +1,28 @@
+{
+  "name": "TypeScript-try-hand",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf ./dist",
+    "prebuild": "npm run clean",
+    "dev": "webpack --mode development --progress",
+    "preinit": "rimraf node_modules dist package-lock.json",
+    "init": "npm install && npm run dev",
+    "preserver": "npm run dev",
+    "server": "webpack-dev-server --mode development --hot --progress"
+  },
+  "author": "Evgeny Vyushin <e@vyushin.ru>",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "copy-webpack-plugin": "^4.5.1",
+    "cross-env": "^5.1.4",
+    "rimraf": "^2.6.2",
+    "ts-loader": "^4.0.1",
+    "typescript": "^2.7.2",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.10",
+    "webpack-dev-server": "^3.1.1"
+  }
+}
