@@ -5,20 +5,23 @@
   "main": "index.js",
   "scripts": {
     "clean": "rimraf ./dist",
-    "prebuild": "npm run clean",
+    "predev": "npm run clean",
     "dev": "webpack --mode development --progress",
     "preinit": "rimraf node_modules dist package-lock.json",
     "init": "npm install && npm run dev",
-    "preserver": "npm run dev",
+    "preserver": "npm run dev && start http://localhost:3000",
     "server": "webpack-dev-server --mode development --hot --progress"
   },
   "author": "Evgeny Vyushin <e@vyushin.ru>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vyushin/typescript-try-hand"
+  },
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
     "copy-webpack-plugin": "^4.5.1",
     "cross-env": "^5.1.4",
-    "rimraf": "^2.6.2",
     "ts-loader": "^4.0.1",
     "typescript": "^2.7.2",
     "webpack": "^4.1.1",
